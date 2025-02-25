@@ -1,0 +1,33 @@
+edition = "2023";
+
+import "google/protobuf/timestamp.proto";
+
+package slide.v1;
+
+option go_package = "github.com/equalsgibson/slide-schema/proto/gen/go/slide/v1;slide";
+
+message Device {
+    repeated Address addresses = 1;
+    google.protobuf.Timestamp booted_at = 2;
+    string client_id = 3;
+    string device_id = 4;
+    string display_name = 5;
+    string hardware_model_name = 6;
+    string hostname = 7;
+    string image_version = 8;
+    repeated string ip_addresses = 9;
+    google.protobuf.Timestamp last_seen_at = 10;
+    bool nfr = 11;
+    string package_version = 12;
+    string serial_number = 13;
+    string service_model_name = 14;
+    string service_model_name_short = 15;
+    string service_status = 16;
+    uint64 storage_total_bytes = 17;
+    uint64 storage_used_bytes = 18;
+}
+
+message Address {
+    string mac = 1;
+    repeated string ips = 2;
+}
