@@ -2,7 +2,7 @@ edition = "2023";
 
 package slide.v1;
 
-option go_package = "github.com/equalsgibson/slide-schema/proto/gen/go/slide/v1;slide";
+option go_package = "github.com/equalsgibson/slide-schema/proto/gen/go/slide/v1;slideschema";
 
 enum Code {
     err_unspecified = 0;

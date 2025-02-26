@@ -4,7 +4,7 @@ import "google/protobuf/timestamp.proto";
 
 package slide.v1;
 
-option go_package = "github.com/equalsgibson/slide-schema/proto/gen/go/slide/v1;slide";
+option go_package = "github.com/equalsgibson/slide-schema/proto/gen/go/slide/v1;slideschema";
 
 message Device {
     repeated Address addresses = 1;
